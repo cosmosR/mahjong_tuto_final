@@ -1,0 +1,775 @@
+/* 메인 컬러 
+
+#4949E8 쨍한 블루
+#595aff 좀 연한 블루
+#055407 초록
+#cb434f 빨강
+
+ */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif KR', serif;;
+}
+
+body
+{
+    
+    width: 100%;
+    height: 80vh;
+
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 10px 30px;
+    font-size: 1.2em;
+}
+
+header .name
+{
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #333333;
+
+
+}
+
+
+
+button {
+    background: white;
+    border: none;
+    color: #4949E8 ;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+
+}
+.button-contain
+{
+position: absolute;
+right: 0;
+
+}
+
+
+
+
+.container
+{
+    margin-top: 100px;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+
+}
+
+.pages{
+    display: flex;
+    width: 900%;
+    box-sizing: border-box;
+
+
+
+}
+
+.page{
+    width: 100%;
+    position: relative;
+
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 1s;
+
+}
+
+.one{
+    background: url("./img/maintiles2.jpg") top right no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+
+}
+.h1-contain
+{
+
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    font-size: 2rem;
+    text-align: right;
+    width: 800px;
+    color: white;
+
+}
+.h1-contain h1
+{
+    font-weight: 800;
+
+}
+
+.h1-contain h2
+{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.h1-contain p
+{
+    font-size: 1.2rem;
+}
+
+
+/* --------2----  */
+
+.page-container 
+{
+    position: relative;
+    align-items: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  
+    padding: 0px 100px;
+    padding-bottom: 74px;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.page-container p 
+{
+    font-size: 1.3rem;
+    color: white;
+
+}
+
+.text-1
+{
+    width: 70%;
+}
+.two
+{
+    background: #595aff;
+}
+
+.two h2 
+{
+    font-size: 2.5rem;
+    color: #4949E8;
+    text-align: left;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.two h4
+{
+    font-size: 2rem;
+    color: white;
+  
+}
+#about{
+    width: 100%;
+    padding: 0px 50px;
+    margin: 80px 0px;
+    border-style: none solid none solid;
+    border-color: white;
+    border-width: 3px;
+
+}
+.two div
+{
+
+}
+
+.three{
+    background: #055407;
+
+}
+
+.three h2 
+{
+    font-size: 2.5rem;
+    color: #055407;
+    text-align: left;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.text-box
+{ 
+  width: 30%;
+}
+
+.text-box h3
+{ 
+  font-size: 1.6rem;
+  color: white;
+  
+  padding: 10px;
+
+}
+
+.pad30
+{
+    padding-top: 30px;
+}
+
+
+.four {
+    background: white;
+}
+.four .pad30
+{
+    border: 3px solid #055407;
+
+}
+.four .page-container
+{
+    flex-direction: row;
+}
+.four h2 
+{
+    font-size: 2.5rem;
+    color: #055407;
+    text-align: left;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.hover-text{
+    width: 134px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    background:#4949E8 ;
+    position: absolute;
+    align-items: center;
+  text-align: center;
+  padding: 3px ;
+}
+.floating-box 
+{
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #055407;
+  padding: 30px;
+  border-radius: 4px;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  text-align: center;
+  color: ;
+  z-index: 999;
+
+}
+
+.hover-text:hover + .floating-box {
+  display: block;
+}
+
+.five
+{
+    background: #595aff;
+    color: #4949E8;
+
+    flex-wrap: wrap;
+
+}
+
+.five .page-container {
+    flex-direction: row;
+}
+.five h2 
+{
+    font-size: 2.5rem;
+    color: #4949E8;
+    text-align: left;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+}
+.five p
+{
+  
+  margin: 18px 0;
+   font-weight: 600;
+}
+.five #about1
+{   
+    display: inline;
+    font-size: 1.4rem;
+    width: 60%;
+    padding-top: 30px;
+
+}
+
+.five #about1 p
+{
+   background: #FFF;
+   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.34);
+   border-radius: 15px;
+    padding: 0px 5px;
+ 
+}
+
+.five #about
+{   
+    display: inline;
+    position: absolute;
+    font-size: 1.2rem;
+    width: 50%;
+    color: #FF4E5D;
+   
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin: 23px 0px;
+
+}
+
+.five #about p
+{
+  
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.34);
+}
+
+.five img
+{
+    background: white;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+
+.six
+{
+    background: white;
+    color: white;
+
+    flex-wrap: wrap;
+
+}
+
+.six .page-container {
+
+
+}
+.six h2 
+{
+    font-size: 2.5rem;
+    color: #cb434f;
+    text-align: left;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.chat
+{
+    display: flex;
+    padding-top: 30px;
+}
+
+.six img
+{
+    width: 60%;
+        margin: 10px;
+}
+
+.six .chat p
+{
+    font-size: 1.2rem;
+    margin: 15px;
+    padding: 5px;
+    color: #cb434f;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+
+.six #notice
+{
+    color: black;
+    font-size: 1.7rem;
+    margin: 60px 30px;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px #CB434F;
+    background: #cb434f;
+}
+
+.six .ex
+{
+    display: flex;
+}
+
+.six .ex p
+{
+    color:#055407; background: #fff;
+    font-size: 1.2rem;
+    margin: 15px;
+    padding: 5px;
+     border: 1px solid;
+    border-radius: 10px;
+}
+
+.six p
+{
+    font-size: 1.5rem;
+    margin: 15px;
+    padding: 30px;
+    
+    color: white;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.six #endtext p
+{
+    font-size: 1.4rem;
+    margin: 15px;
+    padding: 30px;
+    
+    color: white;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.seven
+{
+    background: #595aff;
+    color: #4949E8;
+
+    flex-wrap: wrap;
+
+}
+
+.seven .page-container {
+    flex-direction: row;
+}
+.seven h2 
+{
+    font-size: 2.5rem;
+    color: #4949E8;
+    text-align: left;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+}
+.seven p
+{
+  
+  margin: 18px 0;
+   font-weight: 600;
+}
+.seven #about1
+{   
+    display: inline;
+    font-size: 1.4rem;
+    width: 60%;
+
+}
+
+.seven #about1 p
+{
+   background: #FFF;
+   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.34);
+ 
+}
+
+.seven #about
+{   
+    border: none;
+    display: inline;
+    position: absolute;
+    font-size: 1.2rem;
+    width: 50%;
+    color: #FF4E5D;
+   
+    bottom: 0;
+    right: 0;
+    text-align: right;
+
+}
+
+.seven #about p
+{
+  
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.34);
+}
+
+
+.seven .ex
+{
+    display: flex;
+    margin: 50px;
+}
+
+.seven .ex p
+{
+    color:#055407; background: #fff;
+    font-size: 1.2rem;
+    margin: 15px;
+    padding: 5px;
+     border: 1px solid;
+    border-radius: 10px;
+}
+
+.seven .notice
+{
+    color: black;
+    font-size: 1.6rem;
+    margin: 0px 100px;
+    font-weight: 700;
+    text-shadow: 0px 0px 2px #055407;
+    background: white;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px 50px;
+}
+
+.eight
+{
+    background: #595aff;
+    color: #4949E8;
+
+    flex-wrap: wrap;
+
+}
+
+.eight .page-container {
+    flex-direction: row;
+}
+.eight h2 
+{
+    font-size: 2.5rem;
+    color: #4949E8;
+    text-align: left;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+}
+.eight p
+{
+  
+  margin: 11px 0;
+   font-weight: 600;
+}
+
+.eight img
+{       width: 800px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.eight #about1
+{   
+    display: inline;
+    font-size: 1.4rem;
+    width: 60%;
+
+}
+
+.eight #about1 p
+{
+    padding: 5px 15px;
+   background: #FFF;
+   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.34);
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.eight #yell
+{
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: white;
+    display: inline-block;
+}
+
+.nine
+{
+    background: lightgray;
+    color: white;
+
+    flex-wrap: wrap;
+
+}
+
+.nine .nine-contain {
+    width: 80%;
+
+
+}
+.nine .nine-contain p
+{
+    color: black;
+    font-size: 1.3rem;
+    background: white;
+    margin: 60px 0px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.34);
+    padding-left: 20px;
+}
+.nine h2 
+{
+    font-size: 2.5rem;
+    color: #cb434f;
+    text-align: left;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+details {
+    position: absolute;
+    top: 43px;
+    right: 31px;
+        border-bottom: 1px solid #efefef;
+        color: #666;
+        font-size: 1.2rem;
+        padding: 6px;
+        border: 1px solid;
+        border-radius: 10px;
+        width: 30%;
+        background: white;
+    }
+
+
+    details[open] summary {
+        font-weight: 600;
+    }
+
+    details > summary {
+        color: #000;
+        font-size: 1.3rem;
+        padding: 15px 0;
+        font-weight: 600;
+        background: #cb434f;
+        border: 1px solid;
+        border-radius: 15px;
+        padding: 5px 20px;
+    }
+
+
+.nine .page-container {
+    position: relative;
+    align-items: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 0px 100px;
+    padding-bottom: 74px;
+    flex-direction: row;
+}
+.nine.pad30 { 
+    border: 3px solid #cb434f;
+  
+}
+
+#sou1
+{
+    width: 300px;
+    position: absolute;
+    left: 2vh;
+    top: 30vh;
+    animation: rotateAnimation 1s alternate infinite;
+}
+
+#jong
+{
+    width: 300px;
+    position: absolute;
+    left: 2vh;
+    bottom: 2vh;
+    animation: rotateAnimation 1s alternate infinite;
+}
+
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes shake
+{ 
+0%{ 
+transform: translateX(0px);}
+100%{
+
+transform: translateX(5px);
+
+}
+
+ }
+
+@keyframes rotate1
+{ 
+0% {
+    transform: translateY(15px);
+}
+
+100% {
+    transform: translateY(0px);
+}
+
+ }
+
+ footer
+ {
+    padding: 10px 30px;
+    color: gray;
+ }
+
+footer a{
+    font-weight: 700;
+}
+footer a:link {
+  color : lightblue;
+}
+footer a:visited {
+  color : lightblue;
+}
+
+#backani
+{
+    display: inline-block;
+  background: linear-gradient(45deg, #ff9a00, #ffcd00); /* 배경색 그라데이션 */
+  background-clip: text;
+  
+  animation: textHighlight 2s infinite alternate; /* 애니메이션 적용 */
+}
+

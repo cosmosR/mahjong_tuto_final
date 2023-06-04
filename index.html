@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mahjong tutorial- rich mahjong</title>
+  <meta content="" name="Mahjong tutorial">
+
+
+  <!-- CSS File -->
+  <link href="./style.css" rel="stylesheet">
+  <link href="./css/animate.css" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+
+  <!-- Favicon 발 마작패 -->
+  <link href="./img/favicon.jpg" rel="icon">
+  
+
+  <!-- 폰트 noto serif-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>
+    <div>
+    <img src="./img/hatsu.gif" style="    width: 25px; transform: translateY(2px);" style="display: inline;">
+    <div class="name" onclick="goToHomePage()" style="display: inline;"> Mahjong - 울지 않고 마작 하기 </div>
+  </div>
+    <div class=""> 이 페이지는 pc화면에 최적화 되어 있습니다.</div>
+  </header>
+
+  <div class="container">
+    <div class="pages">
+      <div class="page one ">
+        <div class="h1-contain">
+        <h1 class="wow bounce">Mahjong Tutorials</h1>
+      <h2 class="animate__heartBeat">당당하게 리치로 울지 않고 마작하기</h2>
+      <p> <span style="font-size: 1.8rem; font-weight: 700;">운</span>과 <span style="font-size: 1.8rem; font-weight: 700;">실력</span> </p>
+      <p >어떤 것으로든 승부할 수 있는 마작에 세계에 오신 것을 환영합니다</p>
+      <p>여러분을 가르쳐드릴 저도 전문가가 아닙니다.</p>
+      <p>하지만! 시작하기 너무 어려운 마작을</p> 
+      <p>조금이라도 쉽게 이해시키기 위해 제작되었습니다.</p>
+      </div>
+      
+        <div class="button-contain"><button onclick="slide('next')">next</button>
+        </div>
+      </div>
+
+      <div class="page two">
+        
+        <h2>운칠기삼의 마작을 소개합니다</h2>
+        <div class="page-container">
+        <img src="./img/tiles1.png" style=" width:30%; ">
+        <div class="text-1">
+          <div id="about">
+          <h4 style="text-shadow: 0px 0px 2px white; " class="wow bounce">마작</h4>
+          <p>마작은 왼쪽같은 패를 사용하는 보드게임이다. 중국에서 기원하여 일본 등 동아시아 각지에서  발달된 <strong>4인용 보드 게임</strong>이다. (다만 한국에선 유명하지 않다.)
+              중국, 일본 등에서 인기가 많으며 최근엔 한국에서도 하는 사람들이 많아졌다. </p>
+            </div>
+            
+            <div id="about" style="margin-right: 150px;">
+          <h3 style="color: #fff; font-size: 1.6rem;">다양한 나라에서 많은 사람들이 즐기는 만큼 마작의 게임 룰은 어마어마하게 많다.</h3>
+            <p style="display: inline;   color: black; border-radius: 20px;" ><strong>리치마작</strong> / 이십이마작 / 국표마작 / 광동마작 / 사천마작 / 대만마작 / 한국마작 등등등...</p>
+          </div>
+
+        <div class="text-content" style="padding: 0px 50px;" >
+          <h3 style=" font-size: 1.6rem;">우리는 그 중에서 <strong style="color: #FF4E5D; text-decoration: underline;">'리치마작'</strong>에 대해서 배울 것이다</h3>
+         
+          <h3 style="color: #fff; font-size: 1.8rem;">왜 리치마작인가??</h3>
+          <br>
+          <p style="color:white; background: #4949E8; display: inline;">
+          ➀한국에서 가장 하는 사람이 많다.</p> <br>
+              <p style="color:white; background: #4949E8; display: inline;">
+              <u>➁ '리치'라는 것이 중요하다. (이유는 후술) </u></p>
+        </div>
+      </div>
+      </div>
+
+        
+        <div class="button-contain">
+          <button onclick="slide('prev')">prev</button>
+          <button onclick="slide('next')">next</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="page three">
+        <h2>마작의 최종 목표는?? '용' 만들기!</h2>
+
+        <div class="page-container pad30" >
+          <div class="text-box">           
+          <h3> Q. 동양용을 떠올려봅시다.</h3>
+          </div>
+          <img src="./img/orientaldragon.gif" style="width:800px; margin-bottom: 30px; animation: rotate1 1s infinite alternate;">
+          <div class="text-box">           
+          <h3> A. 그럼 우리가 만들어야할 형태는?</h3>
+        </div>
+         <img src="./img/dragon-tile1.png" style="width:1000px;  ">
+         <p>이런 식으로 몸 4개 머리 하나를 가진 형태로 만들면 된다! </p>
+         <p style=" text-align: center; width: 100%;">머리는 <strong>같은 패 2개</strong>로 만들 수 있고</p>
+
+         <p>몸은 <strong>ⅰ. 4-5-6 처럼 같은 그림의 숫자패 3개가 연속되거나 ⅱ. 5-5-5 처럼 같은 패가 3개 </strong> 있으면 몸으로 만들어진다. </p>
+      </div>
+        <div class="button-contain">
+          <button onclick="slide('prev')" style="color:#055407 ">prev</button>
+          <button onclick="slide('next')"style="color:#055407 ">next</button>
+        </div>
+      </div>
+
+      <div class="page four">
+        <img src="./img/sou1.gif" id="sou1" class="">
+        <h2>마작패 톺아보기</h2>
+        <div class="page-container pad30" >
+          <p style="color: #4949E8; font-size: 1.3rem; margin-bottom: 30px;">마작 패는 자패 7개 수패 27개로 이루어져 있고 <strong>각 패마다 4개씩 존재</strong>하여 총 136개이다.</p><p style="color: #4949E8;
+                        font-size: 1rem;
+                        margin-bottom: 30px;
+                        margin-left: 20px;
+                        "> 
+                      마우스오버해서 패의 이름을 알아보세요</p>
+          
+
+        <img src="./img/all-tiles.png">
+          
+          
+       
+              
+            <div class="hover-text" style="top: 158px; right: 60vh; font-size: 1.3rem">자패(字牌)</div>
+            <div class="floating-box">
+              <p style="color: white; font-size: 1.3rem; padding-bottom: 20px;">자패는 한자만 크게 써있거나 아무것도 없는 것이라 외우면 편하다. </p>
+            <img src="./img/3won.png">  
+            <p>삼원패(三元牌): 중 / 발 / 백</p>
+            <img src="./img/4bang.png">
+            <p> 풍패(風牌): 동남서북( 마작에선 동서남북이 아니다. )</p>
+            </div>
+
+                
+                <div class="hover-text" style="top: 456px;   left: 80vw; font-size: 1.3rem">수패(數牌) </div>
+                <div class="floating-box" >
+                    <p style="color: white; font-size: 1.3rem; padding-bottom: 20px; ">수패는 1부터 9까지 숫자가 표시된 패이다. </p>
+                <img src="./img/sak.png">
+                <p>대나무 모양의 '삭'</p>
+                <img src="./img/tong.png">
+                <p>동그란 모양의 '통'</p>
+                <img src="./img/man.png">
+                <p>한자가 있는 '만'</p>
+              </div>
+              
+            
+            
+          </div>
+       
+        <div class="button-contain">
+          <button onclick="slide('prev')" style="color:#055407 ">prev</button>
+          <button onclick="slide('next')"style="color:#055407 ">next</button>
+        </div>
+      </div>
+      <div class="page five">
+        <h2>사람들이 모였다면 게임시작!</h2>
+
+        <img src="./img/12.gif" style="width:700px">
+        <div id="about1">
+          <p style="font-size: 1.8rem; display: inline; font-weight: 700;">간단 게임 진행 방법</p>
+        <p> ➀ 그림처럼 4명이 동 남 서 북으로 한자리씩 차지하고 각자 13개의 패를 받는다. </p>
+        <p>
+              ➁ 순서는 동-남-서-북으로 진행된다.</p>
+
+              <p>➂ 자신의 차례에 ¹<strong>작패</strong>를 하나 ²<strong>패산</strong>에서 가져오고 가져온 패와 가지고 있던 패 중에 하나를 자신의 앞에 내려놓는다. </p>
+            <p>➃ 가져온 패로 정해진 ⁱ역 형태를 완성하면 ³<strong>화료</strong>하여 승리! </p>
+          </div>
+            <div id="about" style="border: none;">
+            <p>⏣ 용어 설명 ⏣</p>
+            <p>¹작패: 마작패를 의미</p>
+
+            <p>²패산: 패가 쌓여있는 것 </p>
+            <p>³화료: 완료! 역을 만들어 패를 완성했을 때 (=용을 완성했을 때)
+            </p>
+          </div>
+      
+      
+        <div class="button-contain">
+          <button onclick="slide('prev')">prev</button>
+          <button onclick="slide('next')">next</button>
+        </div>
+      </div>
+
+      <div class="page six">
+       
+        <h2>마작의 정석- 역**</h2>
+        <div class="page-container" style="border: 3px solid #cb434f;"> 
+          <div class="chat">
+           <img src="./img/ex.jpg">
+           <div class="text" style="    width: 40%;">
+           
+           <p>오!! 저 용의 형태를 만들었습니다! 저 우승인가요?</p>
+           <p style="color:white; background: #cb434f; animation: shake 7s infinite;">아니요! 마작에는 '역'이란게 있습니다. 그걸 맞춰오세요~</p> 
+           <p>예??? 그냥 만들기만 하면 안되나요?</p>
+         </div>
+       </div>
+          <p id="notice">※ 마작에서 용의 형태를 만들 때는 그냥 막 만들면 안된다. 화료(완성)하기 위해서는 정해진 형태가 있고, 그 형태를 맞춰서 완성해야 점수를 얻을 수 있다. 만들기 어려운 형태일 수록 점수가 높다. <strong>그 '형태'가 바로 '역'</strong>이다.</p>
+          <div class="ex">
+
+          <p style="color: white; background: #055407;">예시 역</p>
+          <p>"탕야오"- 1,9를 제외한 숫자패로만 이루어져야한다.</p>
+          <p>"일기통관"- 한 종류의 수패를 1부터 9까지 전부 확보한 경우 </p>
+        </div>
+
+          <p style="background: #cb434f; color: black; font-weight: 700;" id="endtext">하지만 방금 만든 패로도 화료할 수 있답니다. 어떻게? ✦리치✦를 사용해서!</p>
+        </div>
+      
+      
+      
+        <div class="button-contain">
+          <button onclick="slide('prev')" style="color:#cb434f">prev</button>
+          <button onclick="slide('next')" style="color:#cb434f">next</button>
+        </div>
+      </div>
+
+      <div class="page seven">
+        <h2>리치 마작의 리치가 바로 '역'이었다.</h2>
+       <div class="ex">
+          <p style="background: #055407; color: white;">리치 역의 조건</p>
+          <p style="background: none; color: white; border: none;">:</p>
+          <p>¹울지 않은 상태에서 ²텐파이에 이르면 점수를 1000점을 낸다. 더 이상 손패를 바꿀 수 없다.</p>
+        </div>
+        <div class="notice">
+          <p>완성까지 1패가 남았을 경우 '리치'를 외칠 수 있다.
+              '리치'를 외친다면 리치의 조건 성립, 내 손에 들어오거나 다른 사람이 버린 패로 화료할 수 있게 된다. </p>
+              <p>리치를 외치는 이유? 이전 페이지처럼 딱히 역이 없는 형태라도 용을 완성할 수 있게 해준다.</p>
+              <p id="backani">결론: 리치는 용을 완성하는 데 필요한 '역'을 성립하게 해주는 역할</p>
+            </div>
+
+            <div id="about">
+              <p>⏣ 용어 설명 ⏣</p>
+          <p> ¹운다?: 다른 사람이 버린 패를 주워 내 손으로 가져오는 것 </p>
+              <p>²텐파이: 화료까지 1패가 남았을 경우 </p>
+            </div>
+      
+        <div class="button-contain">
+          <button onclick="slide('prev')">prev</button>
+          <button onclick="slide('next')">next</button>
+        </div>
+      </div>
+
+      <div class="page eight">
+        <h2>다시 차근차근 바라보는 '리치' 역으로 화료하기</h2>
+
+        <img src="./img/13.gif">
+        <p style="color:white;">⬤</p>
+        <div id="about1" style="display: inline-block;">
+          
+            <p> 1.<u>울지 않고 내 손에 들어오는 패</u>들로 머리-몸-몸-몸-몸-몸 (2-3-3-3-3-3)의 형태를   만들어간다.</p>
+            <p>2. <u>필요한 패가 1개 남았을 때</u> '리치'를 외친다.</p>
+            <p> 내가 필요한 패가 내 턴에 손에 들어왔을 땐 </p>
+            <p id="yell" style=" background: none; border: none; animation: shake 1s infinite alternate;">-"쯔모!"</p>
+            <p>다른 사람이 그 패를 버렸을 땐 </p>
+            <p id="yell" style=" background: none; border: none; animation: shake 1s infinite alternate;">-"론!"</p> 
+            <p>을 외치며 화료한다.</p>
+          </div>
+      
+      
+        <div class="button-contain">
+          <button onclick="slide('prev')">prev</button>
+          <button onclick="slide('next')">next</button>
+        </div>
+      </div>
+
+      <div class="page nine">
+        <h2>왜 울면 안되나요?? feat. 역없음</h2>
+        <img src="./img/jong.gif" id="jong">
+        <div class="page-container pad30">
+        <div class="nine-contain">
+          <p>다른 사람이 버린 걸 가져오게 되면 더 게임이 쉬워질 것 같은데? ->라는 생각은 당연하게 들 것입니다.</p>
+          <p>앞의 내용을 읽었다면 드는 가장 큰 생각일 것 같습니다! 저도 그랬거든요</p>
+          <details>
+            <summary>'울기'의 추가 설명</summary>
+            <p style="padding: 10px; font-size: 1.1rem;">우는 것은 자신에게 몸통의 패가 2개가 있을 때 상대방이 나머지 1개의 패를 버리면 그것을 가져오며 몸통을 완성하는 방법입니다.
+            우는 방법에는 세 가지가 있습니다. 치, 퐁, 깡
+            (자세한 것은 생략 검색을 통해 알아가기를 바람...)</p>
+          </details>
+          
+         
+          
+          <p style="background: #cb434f;
+                    display: inline;
+                    color: white;
+                        font-size: 1.5rem;
+                        border-radius: 0px;
+"> 
+          - 잘못하면 '역없음' 상태가 되기 때문입니다. 마작에는 몇 십개의 '역'이 있고 그걸 다 외워서 형태를 맞춰가는 사람은 고수! 당신은 뉴비!
+          뉴비가 제일 많이 하는 실수가 역없는 형태를 만들어내는 것입니다. 괜히 어줍짢게 역을 만드려고 하지 말고 '리치'하며 점수도 낭낭하게 챙기고 게임이 어떻게 돌아가는 지 파악도 하고 조패실력도 키워보세요. </p>
+          <p> + 리치를 한다고 다른 역을 성립 못하는 것은 아닙니다. 역들은 조합이 가능합니다. 그러면 더 많은 점수를 획득할 수 있습니다. (예시:리치+멘젠쯔모+탕야오 )</p>
+      </div>
+    </div>
+      
+        <div class="button-contain">
+          <button onclick="slide('prev')" style="color:#cb434f">prev</button>
+          
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer>
+   <p>Copyright ©2023. Gayeong Min</p>
+   <p>
+    <a href="https://github.com/FluffyStuff/riichi-mahjong-tiles#riichi-mahjong-tiles"> riichi-mahjong-tiles</a> is used under the <a href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International License</a></p>
+  </footer>
+
+
+<script src="script.js"></script>
+<script src="./css/wow.min.js"></script>
+<script>
+              new WOW().init();
+              </script>
+</body>
